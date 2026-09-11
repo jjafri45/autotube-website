@@ -245,7 +245,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
   position: absolute;
   right: 16px;
   bottom: -42px;
-  width: 202px;
+  width: 250px;
   min-height: 116px;
   display: flex;
   align-items: center;
@@ -257,7 +257,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
   box-shadow: var(--shadow);
 }
 
-.floating-proof strong { font-family: var(--display); font-size: 45px; line-height: 1; }
+.floating-proof strong { font-family: var(--display); font-size: 38px; line-height: 1; }
 .floating-proof span { font-size: 11px; line-height: 1.35; font-weight: 700; text-transform: uppercase; }
 
 .proof-band {
@@ -519,7 +519,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
   .window-shell { transform: none; border-radius: 11px; }
   .window-bar { grid-template-columns: 1fr auto; }
   .window-bar > span:nth-child(2) { display: none; }
-  .floating-proof { right: 12px; bottom: -58px; width: 180px; }
+  .floating-proof { right: 12px; bottom: -58px; width: 220px; }
   .proof-band { padding-top: 110px; }
   .proof-metrics { grid-template-columns: 1fr; }
   .proof-metrics div, .proof-metrics div:nth-child(3), .proof-metrics div:nth-child(4) { padding: 22px 0; border-left: 0; border-bottom: 1px solid var(--line-light); }
