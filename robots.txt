@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://autube.is-an.ai/sitemap.xml
+Sitemap: https://autotube.is-an.ai/sitemap.xml
