@@ -34,7 +34,7 @@ body {
 body::selection { background: var(--acid); color: var(--forest); }
 
 a { color: inherit; text-decoration: none; }
-img { display: block; max-width: 100%; }
+img { display: block; max-width: 100%; height: auto; }
 button, input { font: inherit; }
 
 .sr-only {
@@ -122,7 +122,7 @@ button, input { font: inherit; }
   position: relative;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 0.83fr 1.17fr;
+  grid-template-columns: 0.95fr 1.05fr;
   align-items: center;
   gap: clamp(28px, 5vw, 78px);
   padding: 135px max(24px, calc((100vw - 1240px) / 2)) 84px;
@@ -172,9 +172,9 @@ h1, h2 { font-family: var(--display); font-weight: 700; }
 h1 {
   max-width: 740px;
   margin-bottom: 25px;
-  font-size: clamp(54px, 6.9vw, 104px);
-  line-height: 0.9;
-  letter-spacing: -0.067em;
+  font-size: clamp(48px, 5.35vw, 78px);
+  line-height: 0.97;
+  letter-spacing: -0.058em;
 }
 
 h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
@@ -218,8 +218,6 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
 
 .window-shell {
   overflow: hidden;
-  transform: perspective(1400px) rotateY(-5deg) rotateX(2deg);
-  transform-origin: center left;
   border: 1px solid rgba(16, 37, 29, 0.17);
   border-radius: 18px;
   background: #fff;
@@ -241,7 +239,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
 .window-dots { display: flex; gap: 5px; }
 .window-dots i { width: 7px; height: 7px; border-radius: 50%; background: rgba(255, 255, 255, 0.2); }
 .window-status { justify-self: end; color: #a8e8bd; }
-.window-shell img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: top; }
+.window-shell img { width: 100%; height: auto; object-fit: contain; }
 
 .floating-proof {
   position: absolute;
@@ -345,8 +343,8 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
 .stage-copy h3 { margin: 22px 0 18px; font-family: var(--display); font-size: clamp(33px, 3.7vw, 52px); line-height: 1; letter-spacing: -0.045em; }
 .stage-copy p { color: var(--ink-soft); line-height: 1.65; }
 .screen-card { overflow: hidden; border: 9px solid var(--forest); border-radius: 19px; box-shadow: var(--shadow); }
-.screen-card img { width: 100%; }
-.screen-card.tilted { transform: rotate(1.5deg); }
+.screen-card img { width: 100%; height: auto; object-fit: contain; }
+.screen-card.tilted { transform: none; }
 
 .feature-section { padding: 132px 0; overflow: hidden; background: var(--forest); color: white; }
 .section-heading.light > p:last-child { color: #a9bdb4; }
@@ -359,7 +357,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
 .feature-card h3 { margin-bottom: 11px; font-family: var(--display); font-size: 28px; letter-spacing: -0.035em; }
 .feature-card p { max-width: 440px; margin-bottom: 0; color: #a9bdb4; line-height: 1.55; }
 .feature-card-image { grid-column: span 4; min-height: 430px; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 32px; align-items: center; padding: 18px; background: #153c2e; }
-.feature-card-image img { height: 100%; min-height: 360px; object-fit: cover; object-position: top; border-radius: 11px; }
+.feature-card-image img { width: 100%; height: auto; object-fit: contain; border-radius: 11px; }
 .feature-card-image > div { position: relative; padding: 30px; }
 
 .setup-section {
@@ -371,7 +369,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
   padding-bottom: 30px;
 }
 
-.setup-screen .screen-card { transform: rotate(-1.2deg); }
+.setup-screen .screen-card { transform: none; }
 .setup-copy h2 { margin-bottom: 20px; font-family: var(--display); font-size: clamp(39px, 4.6vw, 65px); line-height: 1; letter-spacing: -0.05em; }
 .setup-copy > p:not(.section-code) { color: var(--ink-soft); font-size: 17px; line-height: 1.65; }
 .setup-copy ul { margin: 28px 0 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
@@ -516,7 +514,7 @@ h1 em, h2 em { color: var(--green); font-style: italic; font-weight: 600; }
   .site-nav a { padding: 13px; }
   .header-cta { margin-top: 5px; justify-content: center; }
   .hero { padding: 125px 20px 80px; }
-  h1 { font-size: clamp(50px, 16vw, 72px); }
+  h1 { font-size: clamp(43px, 12.8vw, 61px); }
   .hero-product { width: 100%; margin-top: 18px; }
   .window-shell { transform: none; border-radius: 11px; }
   .window-bar { grid-template-columns: 1fr auto; }
